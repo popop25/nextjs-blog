@@ -6,6 +6,7 @@ export default function FirstPost() {
       <h1>pikachu is yellow</h1>
       <h2>
         <Link href="/">Back to home</Link>
+
       </h2>
     </>
   );
