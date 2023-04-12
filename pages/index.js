@@ -12,8 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Read <Link href="/posts/first-post">this page!</Link>
-          Go <Link href="/posts/index">this page!</Link>
+          Read <Link href="/posts/index">this page!</Link>
         </h1>
 
         <p className={styles.description}>
