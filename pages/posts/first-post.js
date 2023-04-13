@@ -1,12 +1,13 @@
 import Link from 'next/link';
-/*
+
 function bounceball(){
-  location.href = index.html;
   console.log(location.href);
-} */
+  location.href = 'index.html';
+}
+/*
 function openWindow() {  
   window.open('https://gmail.com', '_parent');  
-} 
+} */
 export default function FirstPost() {
   return (
     <>
