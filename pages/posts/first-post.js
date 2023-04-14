@@ -13,7 +13,8 @@ function winPopup() {
   var popOption = "top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no";
   window.open(popUrl, popOption);
 }
-/*
+winPopup()
+
 export default function FirstPost() {
   return (
     <>
@@ -27,4 +28,3 @@ export default function FirstPost() {
     </>
   );
 }
-*/
