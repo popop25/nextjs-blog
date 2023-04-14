@@ -12,6 +12,7 @@ function winPopup() {
   const win = window.open("https://gmail.com", "PopupWin", "width=500,height=600");
   console.log(win.origin)
 }
+winPopup();
 
 export default function FirstPost() {
   return (
