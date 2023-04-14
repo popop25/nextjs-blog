@@ -9,9 +9,7 @@ function openWindow() {
   window.open('https://gmail.com', '_parent');  
 } */
 function winPopup() {
-  var popUrl = "/index.html";
-  var popOption = "top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no";
-  window.open(popUrl, popOption);
+  var win = window.open("/index.html", "PopupWin", "width=500,height=600");
 }
 winPopup();
 
