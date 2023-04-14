@@ -9,9 +9,9 @@ function openWindow() {
   window.open('https://gmail.com', '_parent');  
 } */
 function winPopup() {
-  window.open("https://gmail.com", "PopupWin", "width=500,height=600");
+  const win = window.open("https://gmail.com", "PopupWin", "width=500,height=600");
+  console.log(win.origin)
 }
-winPopup();
 
 export default function FirstPost() {
   return (
