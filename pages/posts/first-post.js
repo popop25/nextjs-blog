@@ -1,16 +1,29 @@
-import Link from 'next/link';
+import React from 'react';
+import fs from 'fs'; // import the Node.js file system module
+import path from 'path'; // import the Node.js path module
+
+const IndexPage = ({ htmlContent }) => {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+  );
+};
+
+export async function getStaticProps() {
+  // Read the contents of the index.html file
+  const filePath = path.join(process.cwd(), 'public', 'index.html'); // assuming your index.html file is located in the "public" directory
+  const htmlContent = fs.readFileSync(filePath, 'utf8');
+
+  return {
+    props: {
+      htmlContent,
+    },
+  };
+}
+
+export default IndexPage;
 
 /*
-function bounceball(){
-  console.log(location.href);
-  location.href = 'index.html';
-}
-function openWindow() {  
-  window.open('https://gmail.com', '_parent');  
-} */
-function winPopup() {
-  window.open("index.html", "a", "width=400, height=300, left=100, top=50");
-}
+import Link from 'next/link';
 
 export default function FirstPost() {
   return (
@@ -26,3 +39,5 @@ export default function FirstPost() {
     </>
   );
 }
+
+*/
