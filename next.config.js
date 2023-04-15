@@ -2,7 +2,7 @@ module.exports = {
   trailingSlash: true,
   exportPathMap: function () {
     return {
-      '/index.html': { page: '/index' },
+      'index.html': { page: 'index' },
     };
   },
 };
