@@ -9,10 +9,8 @@ function openWindow() {
   window.open('https://gmail.com', '_parent');  
 } */
 function winPopup() {
-  const win = window.open("https://gmail.com", "PopupWin", "width=500,height=600");
-  console.log(win.origin)
+  window.open("index.html", "a", "width=400, height=300, left=100, top=50");
 }
-winPopup();
 
 export default function FirstPost() {
   return (
@@ -22,7 +20,7 @@ export default function FirstPost() {
         <Link href="/">Back to home</Link>
       </h2>
       <h2>
-        
+        <input type="button" value="" onclick="winPopup();"/>
       </h2>
     </>
   );
