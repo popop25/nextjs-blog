@@ -15,6 +15,7 @@ function winPopup() {
 export default function FirstPost() {
   return (
     <>
+    <script src="first-post.js"></script>
       <h1>pikachu is yellow</h1>
       <h2>
         <Link href="/">Back to home</Link>
