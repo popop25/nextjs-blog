@@ -58,6 +58,7 @@ export default function Home() {
         >
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          <iframe src="/index.html"></iframe>
         </a>
       </footer>
 
